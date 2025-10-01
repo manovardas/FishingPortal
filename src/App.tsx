@@ -1,12 +1,16 @@
-import { add, format } from "date-fns"
+import MyNavbar from './components/MyNavbar';
 
 function App() {
 
 
   return (
-    <>
-      Hello World {format(add(new Date(), {days: 1}), "do MMMM yyyy")}
-    </>
+    <div>
+      <MyNavbar />
+      <div className="p-4">
+        <h1>Page</h1>
+        <p></p>
+      </div>
+    </div>
   )
 }
 
